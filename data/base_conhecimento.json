@@ -1,1 +1,134 @@
-[]
+[
+  {
+    "id": 1,
+    "categoria": "Tarifas e Direitos",
+    "titulo": "Gratuidade no ônibus para pessoas de 60 a 64 anos",
+    "palavras_chave": ["60 anos", "gratuidade idoso", "idoso", "60 a 64", "terceira idade", "aposentado"],
+    "resposta": "Quem tem de 60 a 64 anos não paga ônibus municipal em São Paulo. A gratuidade fica no Bilhete Único Comum e precisa ser carregada todo mês em uma máquina de recarga. A cota do mês não acumula para o mês seguinte. Quem já tem Bilhete Único Comum não precisa fazer novo cadastro.",
+    "documentos": ["Bilhete Único Comum", "Documento oficial com foto (para quem ainda não tem o cartão)", "CPF", "Comprovante de residência dos últimos 6 meses"],
+    "onde": "Recarga da cota: máquinas Recarregue Aqui em ônibus, terminais e estações. Novo cartão: cadastro no site da SPTrans e retirada em um Posto de Atendimento da SPTrans.",
+    "fonte": "https://www.sptrans.com.br/perguntas-e-respostas/?sobre=gratuidade-60-64",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 2,
+    "categoria": "Tarifas e Direitos",
+    "titulo": "Bilhete Único Especial da Pessoa Idosa (65 anos ou mais)",
+    "palavras_chave": ["65 anos", "bilhete idoso", "bilhete unico idoso", "cartao idoso", "pessoa idosa", "idoso"],
+    "resposta": "Quem tem 65 anos ou mais e mora na capital ou na Região Metropolitana de São Paulo pode pedir o Bilhete Único Especial da Pessoa Idosa, que dá gratuidade no transporte. O pedido é gratuito e precisa ser feito pela própria pessoa idosa. O cartão é enviado para o endereço cadastrado.",
+    "documentos": ["Documento oficial com foto (RG, CNH, CIE ou protocolo de refugiado)", "CPF, se não estiver no documento", "Comprovante de residência recente", "Foto 3x4 com fundo branco"],
+    "onde": "Portal de Atendimento da SPTrans (sptrans.com.br/atendimento), Central 156 ou, com agendamento, Praças de Atendimento das Subprefeituras e Descomplica SP",
+    "fonte": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?conteudo=4268",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 3,
+    "categoria": "Tarifas e Direitos",
+    "titulo": "Bilhete Único de Estudante (meia tarifa ou gratuidade)",
+    "palavras_chave": ["estudante", "meia passagem", "meia tarifa", "passe livre", "bilhete estudante", "escola", "faculdade"],
+    "resposta": "Estudantes podem ter meia tarifa ou gratuidade nos ônibus municipais. Primeiro a escola precisa enviar os dados da matrícula para a SPTrans. Depois o estudante faz o cadastro no portal da SPTrans/DNE e paga a taxa de emissão. A gratuidade para baixa renda depende do CadÚnico; enquanto ela é analisada, dá para usar a meia tarifa.",
+    "documentos": ["Documento com foto", "CPF, se não estiver no documento", "Comprovante de residência dos últimos 6 meses", "Foto 3x4 com fundo branco", "Matrícula informada pela escola"],
+    "onde": "Portal do Bilhete Único de Estudante (estudante.sptrans.com.br)",
+    "fonte": "https://www.sptrans.com.br/perguntas-e-respostas/?sobre=bilhete-estudante",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 4,
+    "categoria": "Tarifas e Direitos",
+    "titulo": "Bilhete Único Especial da Pessoa com Deficiência",
+    "palavras_chave": ["deficiencia", "pcd", "deficiente", "bilhete especial", "cadeirante", "mobilidade reduzida"],
+    "resposta": "Pessoas com deficiência, permanente ou temporária, que moram em São Paulo ou na Região Metropolitana podem pedir o Bilhete Único Especial, que dá gratuidade nos ônibus municipais, no Metrô e na CPTM. É preciso imprimir o formulário da SPTrans e levar ao médico, que preenche com o CID. A emissão é gratuita.",
+    "documentos": ["Formulário da SPTrans preenchido pelo médico (vale 90 dias)", "Documento com foto", "Comprovante de residência dos últimos 6 meses"],
+    "onde": "Site do Bilhete Único da SPTrans (bilheteunico.sptrans.com.br) ou Central 156",
+    "fonte": "https://www.sptrans.com.br/perguntas-e-respostas/?sobre=bilhete-pcd",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 5,
+    "categoria": "Tarifas e Direitos",
+    "titulo": "Atende+: transporte porta a porta para pessoas com deficiência severa",
+    "palavras_chave": ["atende", "atende+", "porta a porta", "van adaptada", "autismo", "deficiencia severa", "cadeira de rodas"],
+    "resposta": "O Atende+ é um serviço gratuito da SPTrans que leva de porta a porta pessoas com deficiência física severa, autismo ou surdocegueira que não conseguem usar o ônibus comum sozinhas. Só vale para quem mora no município de São Paulo. O médico preenche a Ficha de Avaliação Médica e a SPTrans analisa o pedido.",
+    "documentos": ["Ficha de Avaliação Médica preenchida pelo médico", "RG e CPF (ou certidão de nascimento para menores)", "Comprovante de endereço com CEP", "RG e comprovante de endereço do responsável, se houver"],
+    "onde": "Site da SPTrans (sptrans.com.br/atende) ou Posto de Atendimento da SPTrans. Dúvidas: Central 156",
+    "fonte": "https://www.sptrans.com.br/atende/requisitos",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 6,
+    "categoria": "Tarifas e Direitos",
+    "titulo": "Domingão Tarifa Zero: ônibus de graça aos domingos",
+    "palavras_chave": ["domingo", "tarifa zero", "domingao", "gratis", "de graca", "natal", "ano novo"],
+    "resposta": "Todos os domingos, das 0h às 23h59, os ônibus municipais de São Paulo são de graça, sem limite de viagens. Também vale no Natal, no Ano Novo e no aniversário da cidade (25 de janeiro). Basta encostar o Bilhete Único no validador. Não vale para Metrô, trens e ônibus intermunicipais.",
+    "documentos": ["Nenhum documento é necessário"],
+    "onde": "Qualquer ônibus municipal da SPTrans",
+    "fonte": "https://www.sptrans.com.br/perguntas-e-respostas/?sobre=tarifa-zero",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 7,
+    "categoria": "Viagem e Informação",
+    "titulo": "Integração do Bilhete Único: quantos ônibus com uma tarifa",
+    "palavras_chave": ["integracao", "baldeacao", "trocar de onibus", "quantos onibus", "3 horas", "tarifa", "preco da passagem"],
+    "resposta": "Com o Bilhete Único Comum, você paga uma tarifa e pode pegar até 4 ônibus municipais em 3 horas. Com Metrô ou CPTM, a integração permite 1 viagem em trilhos e até 3 ônibus, e o trilho precisa ser usado nas 2 primeiras horas. Desde 6 de janeiro de 2026, a tarifa básica do ônibus é R$ 5,30.",
+    "documentos": ["Bilhete Único com crédito"],
+    "onde": "Ônibus municipais, Metrô e CPTM",
+    "fonte": "https://www.sptrans.com.br/perguntas-e-respostas/?sobre=bilhete-unico",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 8,
+    "categoria": "Viagem e Informação",
+    "titulo": "Onde e como recarregar o Bilhete Único",
+    "palavras_chave": ["recarga", "recarregar", "colocar credito", "credito", "carregar bilhete", "comprar credito"],
+    "resposta": "Você pode comprar crédito em aplicativos credenciados pela SPTrans, por WhatsApp, em apps de banco ou nas máquinas de autoatendimento de terminais e estações. Depois de comprar pelo app, encoste o cartão em uma máquina Recarregue Aqui para validar o crédito. Nos Postos de Atendimento da SPTrans basta levar o cartão.",
+    "documentos": ["Bilhete Único"],
+    "onde": "Aplicativos listados em sptrans.com.br/app, máquinas Recarregue Aqui (ônibus, terminais, Metrô e CPTM) e Postos de Atendimento da SPTrans",
+    "fonte": "https://bilheteunico.sptrans.com.br/recarga/",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 9,
+    "categoria": "Viagem e Informação",
+    "titulo": "Saber quando o ônibus vai chegar (Olho Vivo)",
+    "palavras_chave": ["quando chega", "previsao", "olho vivo", "horario do onibus", "que horas passa", "onibus demora", "tempo real"],
+    "resposta": "O Olho Vivo, da SPTrans, mostra no mapa onde estão os ônibus de cada linha e a previsão de chegada nos pontos. Ele funciona no navegador do celular. Aplicativos como Moovit e Cittamobi usam os dados do Olho Vivo para mostrar o horário em tempo real.",
+    "documentos": ["Nenhum documento é necessário"],
+    "onde": "Site Olho Vivo (olhovivo.sptrans.com.br) ou aplicativos que usam os dados da SPTrans",
+    "fonte": "https://www.sptrans.com.br/acompanhe-e-planeje-sua-viagem/",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 10,
+    "categoria": "Viagem e Informação",
+    "titulo": "Reclamar de ônibus que demorou ou não parou no ponto",
+    "palavras_chave": ["reclamar", "reclamacao", "nao parou", "passou direto", "demorou", "lotado", "156"],
+    "resposta": "Você pode reclamar de demora excessiva, ônibus que passou direto ou outro problema pelo Portal SP156 ou pelo telefone 156. Informe a linha, o local, a data, o horário e, se souber, o número do ônibus. Guarde o número do protocolo para acompanhar a resposta. Se não tiver resposta, procure a Ouvidoria da SPTrans.",
+    "documentos": ["Número da linha", "Local, data e horário", "Número do ônibus (prefixo), se souber"],
+    "onde": "Portal SP156 (sp156.prefeitura.sp.gov.br), telefone 156 ou Ouvidoria da SPTrans",
+    "fonte": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=982",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 11,
+    "categoria": "Clima e Segurança",
+    "titulo": "O que fazer com alagamento no caminho ou no ponto",
+    "palavras_chave": ["alagamento", "alagado", "enchente", "chuva forte", "inundacao", "defesa civil"],
+    "resposta": "Evite andar ou esperar em áreas alagadas: a água pode esconder buracos e bueiros abertos, e uma correnteza de 15 cm já pode derrubar uma pessoa. Procure um lugar mais alto e seguro. Em emergência ligue 199 (Defesa Civil) ou 193 (Bombeiros). Para receber alertas por SMS, envie seu CEP para 40199.",
+    "documentos": ["Nenhum documento é necessário"],
+    "onde": "Defesa Civil: telefone 199. Bombeiros: telefone 193. Alertas: SMS com o CEP para 40199",
+    "fonte": "https://www.agenciasp.sp.gov.br/defesa-civil-orientacoes-enchentes/",
+    "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 12,
+    "categoria": "Clima e Segurança",
+    "titulo": "Calor forte esperando o ônibus: como se proteger",
+    "palavras_chave": ["calor", "onda de calor", "sol forte", "muito quente", "desidratacao", "temperatura", "ventilador"],
+    "resposta": "Em dias muito quentes, beba água mesmo sem sede e evite ficar no sol entre 10h e 16h. Prefira esperar na sombra ou em um abrigo coberto. Idosos e crianças sentem menos sede e precisam de mais atenção. Evite bebidas alcoólicas e com cafeína. Tontura, confusão ou boca muito seca podem ser sinais de desidratação: procure ajuda.",
+    "documentos": ["Nenhum documento é necessário"],
+    "onde": "Em caso de mal-estar: UBS mais próxima ou SAMU (telefone 192)",
+    "fonte": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/o/ondas-de-calor",
+    "verificado_em": "2026-11-05"
+  }
+]
