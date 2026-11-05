@@ -9,6 +9,36 @@ from orientacao import Orientacao
 CAMPOS_OBRIGATORIOS = ("id", "categoria", "titulo", "palavras_chave", "resposta",
                        "documentos", "onde", "fonte", "verificado_em")
 
+# Pesos e limites da busca (constantes: dá para ajustar aqui sem mexer no resto do código)
+PONTOS_PALAVRA_CHAVE = 3
+PONTOS_TITULO = 1
+TAMANHO_MINIMO_PALAVRA = 4
+LIMITE_ALTA = 6
+LIMITE_MEDIA = 3
+
+ACENTOS = {"á": "a", "à": "a", "ã": "a", "â": "a", "é": "e", "ê": "e",
+           "í": "i", "ó": "o", "õ": "o", "ô": "o", "ú": "u", "ç": "c"}
+
+
+def normalizar(texto):
+    """Deixa o texto em minúsculas, sem acentos e sem pontuação.
+    Coloca um espaço no começo e no fim para comparar palavras inteiras."""
+    texto = texto.lower().strip()
+    for letra, troca in ACENTOS.items():
+        texto = texto.replace(letra, troca)
+    for sinal in "?!.,;:()":
+        texto = texto.replace(sinal, " ")
+    return " " + " ".join(texto.split()) + " "
+
+
+def confianca(pontos):
+    """Transforma a pontuação em nível de confiança."""
+    if pontos >= LIMITE_ALTA:
+        return "ALTA"
+    if pontos >= LIMITE_MEDIA:
+        return "MÉDIA"
+    return "BAIXA"
+
 
 class BaseConhecimento:
     def __init__(self, caminho):
@@ -73,11 +103,37 @@ class BaseConhecimento:
         return [o for o in self.orientacoes if o.categoria == categoria]
 
     def pontuar(self, pergunta, orientacao):
-        """+3 por palavra-chave na pergunta, +1 por palavra (4+ letras) no título."""
-        # TODO
-        pass
+        """+3 por palavra-chave na pergunta, +1 por palavra (4+ letras) no título.
+        A pergunta já deve chegar normalizada."""
+        pontos = 0
+
+        # Palavra-chave inteira dentro da pergunta: +3
+        for chave in orientacao.palavras_chave:
+            if normalizar(chave) in pergunta:
+                pontos += PONTOS_PALAVRA_CHAVE
+
+        # Palavra da pergunta (4 letras ou mais) que aparece no título: +1
+        titulo = normalizar(orientacao.titulo)
+        palavras_contadas = []
+        for palavra in pergunta.split():
+            if len(palavra) >= TAMANHO_MINIMO_PALAVRA and palavra not in palavras_contadas:
+                if " " + palavra + " " in titulo:
+                    pontos += PONTOS_TITULO
+                    palavras_contadas.append(palavra)
+
+        return pontos
 
     def buscar(self, pergunta):
-        """Devolve lista de tuplas (pontos, orientacao), da maior para a menor."""
-        # TODO
-        pass
+        """Devolve lista de tuplas (pontos, orientacao), da maior para a menor.
+        Só entram orientações com pelo menos 1 ponto."""
+        pergunta = normalizar(pergunta)
+        resultados = []
+        for orientacao in self.orientacoes:
+            pontos = self.pontuar(pergunta, orientacao)
+            if pontos > 0:
+                resultados.append((pontos, orientacao))
+
+        # Ordena pelo primeiro item da tupla (os pontos), do maior para o menor.
+        # Em empate, mantém a ordem do JSON.
+        resultados.sort(key=lambda tupla: tupla[0], reverse=True)
+        return resultados

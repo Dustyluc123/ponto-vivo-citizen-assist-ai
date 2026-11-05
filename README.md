@@ -79,15 +79,15 @@ Essa orientação respondeu sua dúvida? (s/n):
 
 - [x] Base de conhecimento em JSON com 12 orientações, 3 categorias e fontes oficiais
 - [ ] Classes `Orientacao`, `BaseConhecimento` e `Assistente` ligadas por composição
-- [ ] Busca em texto livre com normalização (sem acentos, sem pontuação, minúsculas)
-- [ ] Pontuação por palavras-chave e título, com nível de confiança ALTA ou MÉDIA
+- [x] Busca em texto livre com normalização (sem acentos, sem pontuação, minúsculas)
+- [x] Pontuação por palavras-chave e título, com nível de confiança ALTA ou MÉDIA
+- [x] JSON ausente ou corrompido não trava o programa
 - [ ] Melhor resposta e até duas alternativas
 - [ ] Navegação por categorias, com "0 para voltar" em todas as telas
 - [ ] Entradas inválidas nunca encerram o programa
 - [ ] Bloqueio de dados pessoais (CPF, telefone, e-mail)
 - [ ] Histórico em `data/historico.json` e exportação para `data/atendimentos.csv`
 - [ ] Indicadores de acerto, tempo, tentativas e facilidade de uso
-- [ ] JSON ausente ou corrompido não trava o programa
 
 ## Arquitetura
 
