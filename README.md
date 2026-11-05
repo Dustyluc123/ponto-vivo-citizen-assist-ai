@@ -78,16 +78,16 @@ Essa orientação respondeu sua dúvida? (s/n):
 ## Funcionalidades
 
 - [x] Base de conhecimento em JSON com 12 orientações, 3 categorias e fontes oficiais
-- [ ] Classes `Orientacao`, `BaseConhecimento` e `Assistente` ligadas por composição
+- [x] Classes `Orientacao`, `BaseConhecimento` e `Assistente` ligadas por composição
 - [x] Busca em texto livre com normalização (sem acentos, sem pontuação, minúsculas)
 - [x] Pontuação por palavras-chave e título, com nível de confiança ALTA ou MÉDIA
 - [x] JSON ausente ou corrompido não trava o programa
-- [ ] Melhor resposta e até duas alternativas
-- [ ] Navegação por categorias, com "0 para voltar" em todas as telas
-- [ ] Entradas inválidas nunca encerram o programa
-- [ ] Bloqueio de dados pessoais (CPF, telefone, e-mail)
-- [ ] Histórico em `data/historico.json` e exportação para `data/atendimentos.csv`
-- [ ] Indicadores de acerto, tempo, tentativas e facilidade de uso
+- [x] Melhor resposta e até duas alternativas
+- [x] Navegação por categorias, com "0 para voltar" em todas as telas
+- [x] Entradas inválidas nunca encerram o programa
+- [x] Bloqueio de dados pessoais (CPF, telefone, e-mail)
+- [x] Histórico em `data/historico.json` e exportação para `data/atendimentos.csv`
+- [x] Indicadores de acerto, tempo, tentativas e facilidade de uso
 
 ## Arquitetura
 
@@ -207,7 +207,7 @@ No macOS e no Linux, se `python` não existir, use `python3 main.py`.
 
 ## Histórico e indicadores
 
-Cada atendimento é salvo em `data/historico.json` com data, origem (pergunta ou categoria), pergunta, id da orientação, se encontrou, se ajudou, tentativas e tempo em segundos. Ao sair, o assistente pede uma nota de facilidade de 1 a 5.
+Cada atendimento é salvo em `data/historico.json` com data, origem (pergunta ou categoria), pergunta, id da orientação, se encontrou, se ajudou, tentativas, tempo em segundos e nota de facilidade. Um atendimento pode ter várias tentativas: ele termina quando a pessoa responde se a orientação ajudou ou quando volta ao menu sem encontrar resposta. Ao sair, o assistente pede uma nota de facilidade de 1 a 5, grava a nota nos atendimentos daquela execução e atualiza o CSV.
 
 | Indicador                  | O que mede                                   |
 | -------------------------- | -------------------------------------------- |
