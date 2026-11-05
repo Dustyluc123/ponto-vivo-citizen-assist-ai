@@ -177,6 +177,7 @@ ponto-vivo-citizen-assist-ai/
 ├── orientacao.py               # Classe Orientacao
 ├── base_conhecimento.py        # Classe BaseConhecimento: lê o JSON, normaliza e pontua
 ├── assistente.py               # Classe Assistente: atendimento, histórico e indicadores
+├── tela.py                     # Aparência do terminal: cores, caixas e quebra de linha
 ├── data/
 │   ├── base_conhecimento.json  # As 12 orientações, com fonte e data
 │   ├── historico.json          # Atendimentos registrados

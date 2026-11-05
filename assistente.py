@@ -6,6 +6,7 @@ import json
 import time
 from datetime import datetime
 
+import tela
 from base_conhecimento import LIMITE_MEDIA, confianca
 
 CAMINHO_HISTORICO = "data/historico.json"
@@ -26,14 +27,14 @@ def ler_opcao(mensagem, minimo, maximo):
     while True:
         texto = input(mensagem).strip()
         if not texto:
-            print("Resposta vazia. Digite um número.")
+            tela.erro("Resposta vazia. Digite um número.")
             continue
         if not texto.isdigit():
-            print(f"'{texto}' não é um número. Digite um número de {minimo} a {maximo}.")
+            tela.erro(f"'{texto}' não é um número. Digite um número de {minimo} a {maximo}.")
             continue
         numero = int(texto)
         if numero < minimo or numero > maximo:
-            print(f"Opção fora da faixa. Digite um número de {minimo} a {maximo}.")
+            tela.erro(f"Opção fora da faixa. Digite um número de {minimo} a {maximo}.")
             continue
         return numero
 
@@ -46,7 +47,7 @@ def ler_sim_nao(mensagem):
             return True
         if texto in ("n", "nao", "não"):
             return False
-        print("Resposta inválida. Digite s para sim ou n para não.")
+        tela.erro("Resposta inválida. Digite s para sim ou n para não.")
 
 
 def tem_dado_pessoal(texto):
@@ -76,7 +77,7 @@ class Assistente:
         ultima_sem_resposta = ""
 
         while True:
-            pergunta = input("\nDigite sua dúvida (0 para voltar): ").strip()
+            pergunta = input("\n" + tela.cor("Digite sua dúvida", "negrito") + tela.cor(" (0 para voltar)", "apagado") + ": ").strip()
 
             if pergunta == "0":
                 # Saiu sem encontrar: registra como dúvida sem solução
@@ -86,12 +87,12 @@ class Assistente:
                 return
 
             if not pergunta:
-                print("Você não digitou nada. Escreva sua dúvida ou 0 para voltar.")
+                tela.erro("Você não digitou nada. Escreva sua dúvida ou 0 para voltar.")
                 continue
 
             if tem_dado_pessoal(pergunta):
                 # Não conta como tentativa e não é registrado
-                print("Atenção: não digite CPF, telefone ou e-mail. Reescreva sua dúvida.")
+                tela.aviso("Atenção: não digite CPF, telefone ou e-mail. Reescreva sua dúvida.")
                 continue
 
             tentativas += 1
@@ -99,27 +100,28 @@ class Assistente:
 
             if not resultados or resultados[0][0] < LIMITE_MEDIA:
                 ultima_sem_resposta = pergunta
-                print("\nNão encontrei uma orientação para essa dúvida.")
-                print("Tente outras palavras, por exemplo: idoso, estudante, domingo, recarga, calor.")
-                print("Ou volte (0) e navegue pelas categorias: " + ", ".join(self.base.categorias()) + ".")
+                print()
+                tela.aviso("Não encontrei uma orientação para essa dúvida.")
+                tela.dica("Tente outras palavras, por exemplo: idoso, estudante, domingo, recarga, calor.")
+                tela.dica("Ou volte (0) e navegue pelas categorias: " + ", ".join(self.base.categorias()) + ".")
                 continue
 
             pontos, melhor = resultados[0]
-            print(f"\nConfiança da resposta: {confianca(pontos)} ({pontos} pontos)")
+            print("\n" + tela.selo_confianca(confianca(pontos), pontos))
             melhor.exibir()
 
             alternativas = [(p, o) for p, o in resultados[1:] if p >= LIMITE_MEDIA][:MAXIMO_ALTERNATIVAS]
             if alternativas:
-                print("\nOutras orientações que podem ajudar:")
+                tela.secao("Outras orientações que podem ajudar")
                 for p, o in alternativas:
-                    print(f"  - {o.titulo} ({p} pontos)")
+                    print("    • " + o.titulo + tela.cor(f"  ({p} pontos)", "apagado"))
 
             ajudou = ler_sim_nao("\nEssa orientação respondeu sua dúvida? (s/n): ")
             tempo = round(time.time() - inicio, 1)
             self.registrar("pergunta", pergunta, melhor, True, ajudou, tentativas, tempo)
 
             if not ajudou:
-                print("Obrigado por avisar. Tente perguntar de outro jeito ou navegue pelas categorias.")
+                tela.dica("Obrigado por avisar. Tente perguntar de outro jeito ou navegue pelas categorias.")
 
             # Começa um novo atendimento
             inicio = time.time()
@@ -131,10 +133,11 @@ class Assistente:
         categorias = self.base.categorias()
 
         while True:
-            print("\nCategorias:")
+            print()
+            tela.caixa([("Categorias", ("negrito",))])
             for numero, categoria in enumerate(categorias, start=1):
-                print(f"  {numero}. {categoria}")
-            print("  0. Voltar")
+                print(f"  {tela.cor(str(numero), 'ciano', 'negrito')}  {categoria}")
+            print(f"  {tela.cor('0', 'ciano', 'negrito')}  " + tela.cor("Voltar", "apagado"))
             escolha = ler_opcao("Escolha uma categoria: ", 0, len(categorias))
             if escolha == 0:
                 return
@@ -144,10 +147,11 @@ class Assistente:
             orientacoes = self.base.por_categoria(categoria)
 
             while True:
-                print(f"\n{categoria}:")
+                print()
+                tela.caixa([(categoria, ("negrito",))])
                 for numero, orientacao in enumerate(orientacoes, start=1):
-                    print(f"  {numero}. {orientacao.titulo}")
-                print("  0. Voltar")
+                    print(f"  {tela.cor(str(numero), 'ciano', 'negrito')}  {orientacao.titulo}")
+                print(f"  {tela.cor('0', 'ciano', 'negrito')}  " + tela.cor("Voltar", "apagado"))
                 escolha = ler_opcao("Escolha uma orientação: ", 0, len(orientacoes))
                 if escolha == 0:
                     break
@@ -167,7 +171,7 @@ class Assistente:
             atendimento["facilidade"] = nota
         self._salvar_historico()
         self.exportar_csv()
-        print(f"Obrigado por usar o {self.nome}!")
+        tela.sucesso(f"Obrigado por usar o {self.nome}!")
 
     # ----- Histórico -----
 
@@ -196,7 +200,7 @@ class Assistente:
                 return dados
         except (FileNotFoundError, json.JSONDecodeError):
             pass
-        print("Aviso: histórico não encontrado ou inválido. Um novo histórico será criado.")
+        tela.aviso("Aviso: histórico não encontrado ou inválido. Um novo histórico será criado.")
         return []
 
     def _salvar_historico(self):
@@ -204,7 +208,7 @@ class Assistente:
             with open(self.caminho_historico, "w", encoding="utf-8") as arquivo:
                 json.dump(self.historico, arquivo, ensure_ascii=False, indent=2)
         except OSError:
-            print("Aviso: não foi possível salvar o histórico.")
+            tela.erro("Aviso: não foi possível salvar o histórico.")
 
     # ----- Indicadores e CSV -----
 
@@ -212,7 +216,8 @@ class Assistente:
         """% encontrada, % ajudou, tempo médio, tentativas, facilidade, dúvidas sem solução."""
         total = len(self.historico)
         if total == 0:
-            print("\nAinda não há atendimentos registrados.")
+            print()
+            tela.aviso("Ainda não há atendimentos registrados.")
             return None
 
         encontrados = [a for a in self.historico if a["encontrou"]]
@@ -230,20 +235,27 @@ class Assistente:
             "sem_solucao": sem_solucao,
         }
 
-        print("\n===== Indicadores =====")
-        print(f"Atendimentos:               {resultado['atendimentos']}")
-        print(f"Resposta encontrada:        {resultado['encontrada_pct']}%")
-        print(f"Taxa de acerto (ajudou):    {resultado['acerto_pct']}%")
-        print(f"Tempo médio para encontrar: {resultado['tempo_medio_s']} s")
-        print(f"Tentativas por atendimento: {resultado['tentativas_media']}")
         facilidade = resultado["facilidade_media"]
-        print(f"Facilidade de uso (1 a 5):  {facilidade if facilidade is not None else 'sem notas ainda'}")
-        print("Dúvidas sem solução:")
+        linhas = [
+            ("Atendimentos", str(resultado["atendimentos"])),
+            ("Resposta encontrada", f"{resultado['encontrada_pct']}%"),
+            ("Taxa de acerto (ajudou)", f"{resultado['acerto_pct']}%"),
+            ("Tempo médio para encontrar", f"{resultado['tempo_medio_s']} s"),
+            ("Tentativas por atendimento", str(resultado["tentativas_media"])),
+            ("Facilidade de uso (1 a 5)", str(facilidade) if facilidade is not None else "sem notas ainda"),
+        ]
+
+        print()
+        tela.caixa([("Indicadores", ("negrito",))])
+        for nome, valor in linhas:
+            print(f"  {nome:<28}" + tela.cor(valor, "ciano", "negrito"))
+
+        tela.secao("Dúvidas sem solução")
         if sem_solucao:
             for pergunta in sem_solucao:
-                print(f"  - {pergunta}")
+                print("    • " + pergunta)
         else:
-            print("  nenhuma")
+            tela.dica("    nenhuma")
         return resultado
 
     def exportar_csv(self):
@@ -255,7 +267,8 @@ class Assistente:
                 for atendimento in self.historico:
                     escritor.writerow({campo: atendimento.get(campo) for campo in CAMPOS_ATENDIMENTO})
         except OSError:
-            print("Erro: não foi possível exportar o CSV.")
+            tela.erro("Erro: não foi possível exportar o CSV.")
             return False
-        print(f"\n{len(self.historico)} atendimentos exportados para {self.caminho_csv}.")
+        print()
+        tela.sucesso(f"{len(self.historico)} atendimentos exportados para {self.caminho_csv}.")
         return True
