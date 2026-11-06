@@ -80,6 +80,12 @@ def dica(texto):
     print(cor(texto, "apagado"))
 
 
+def numero(valor, casas=1):
+    """Formata número no padrão brasileiro: 1.234,5"""
+    texto = f"{valor:,.{casas}f}"
+    return texto.replace(",", "X").replace(".", ",").replace("X", ".")
+
+
 def selo_confianca(nivel, pontos):
     """Mostra o nível de confiança colorido: ALTA em verde, MÉDIA em amarelo."""
     estilo = "verde" if nivel == "ALTA" else "amarelo"

@@ -2,13 +2,13 @@
 
 <p align="center">
   <strong>O ponto de ônibus que enxerga quem a cidade não enxerga.</strong><br />
-  Assistente digital que orienta passageiros de ônibus de São Paulo sobre tarifas, direitos, viagem, calor e alagamentos, sempre com fonte oficial.
+  Assistente digital que orienta passageiros de ônibus de São Paulo sobre tarifas, direitos, viagem, calor, alagamentos e energia, sempre com fonte.
 </p>
 
 <p align="center">
   <img alt="Python" src="https://img.shields.io/badge/Python-3.9+-3776ab?logo=python&logoColor=white" />
   <img alt="Sem dependências" src="https://img.shields.io/badge/depend%C3%AAncias-nenhuma-12a85f" />
-  <img alt="Orientações" src="https://img.shields.io/badge/orienta%C3%A7%C3%B5es-12-0b7285" />
+  <img alt="Orientações" src="https://img.shields.io/badge/orienta%C3%A7%C3%B5es-15-0b7285" />
   <img alt="FIAP GS 2026.2" src="https://img.shields.io/badge/FIAP-Global_Solution_2026.2-ed145b" />
 </p>
 
@@ -77,7 +77,8 @@ Essa orientação respondeu sua dúvida? (s/n):
 
 ## Funcionalidades
 
-- [x] Base de conhecimento em JSON com 12 orientações, 3 categorias e fontes oficiais
+- [x] Base de conhecimento em JSON com 15 orientações, 4 categorias e fontes
+- [x] Opção "Energia do Ponto Vivo" com a análise de energia do abrigo
 - [x] Classes `Orientacao`, `BaseConhecimento` e `Assistente` ligadas por composição
 - [x] Busca em texto livre com normalização (sem acentos, sem pontuação, minúsculas)
 - [x] Pontuação por palavras-chave e título, com nível de confiança ALTA ou MÉDIA
@@ -135,10 +136,13 @@ O assistente **só responde com o que está** em [`data/base_conhecimento.json`]
 | 10  | Viagem e Informação | Reclamar de ônibus que demorou ou não parou no ponto        |
 | 11  | Clima e Segurança   | O que fazer com alagamento no caminho ou no ponto           |
 | 12  | Clima e Segurança   | Calor forte esperando o ônibus: como se proteger            |
+| 13  | Energia e Sustentabilidade | Ponto Fresco: o ventilador movido a energia solar    |
+| 14  | Energia e Sustentabilidade | Por que o ventilador liga só com calor e gente esperando |
+| 15  | Energia e Sustentabilidade | Ônibus ou carro: quanto CO2 você deixa de emitir     |
 
 Regras seguidas na base:
 
-- Toda orientação tem **fonte oficial** (SPTrans, Portal SP156, Prefeitura, Governo de SP ou Ministério da Saúde) e a **data em que foi conferida**.
+- Toda orientação tem **fonte** (SPTrans, Portal SP156, Prefeitura, Governo de SP, Ministério da Saúde, INMET, CRESESB ou Metrô de SP) e a **data em que foi conferida**. As orientações de energia (13 a 15) usam os cálculos da pasta [`energia/`](energia/) e avisam que são estimativas de um projeto acadêmico.
 - Respostas em **linguagem simples**, sem inventar informação. Quando as fontes divergiam em algum detalhe (por exemplo, prazos), o detalhe ficou de fora.
 - Palavras-chave escritas **sem acento e em minúsculas**, do jeito que o passageiro costuma perguntar ("de graca", "passou direto", "meia passagem").
 
@@ -179,10 +183,13 @@ ponto-vivo-citizen-assist-ai/
 ├── assistente.py               # Classe Assistente: atendimento, histórico e indicadores
 ├── tela.py                     # Aparência do terminal: cores, caixas e quebra de linha
 ├── data/
-│   ├── base_conhecimento.json  # As 12 orientações, com fonte e data
+│   ├── base_conhecimento.json  # As 15 orientações, com fonte e data
 │   ├── historico.json          # Atendimentos registrados
 │   └── atendimentos.csv        # Atendimentos exportados
 └── energia/                    # Contribuição de Soluções em Energias Renováveis
+    ├── calculos.py             # Análise solar x rede, com dados reais
+    ├── resultados.json         # Resultados usados pela opção 5 do menu
+    └── dados/                  # Temperatura (INMET) e irradiação solar (CRESESB)
 ```
 
 ## Como rodar
@@ -240,7 +247,7 @@ _A preencher depois do teste com pelo menos 3 pessoas de fora do projeto e 10 at
 
 | Disciplina                     | Como se conecta ao Ponto Vivo                                                         |
 | ------------------------------ | ------------------------------------------------------------------------------------- |
-| Soluções em Energias Renováveis | Cálculo do abrigo solar com ventilador e orientações de energia, na pasta [`energia/`](energia/) |
+| Soluções em Energias Renováveis | Análise solar x rede do abrigo com ventilador, opção 5 do menu e orientações 13 a 15. Detalhes em [`energia/`](energia/) |
 | Computer Organization and Architecture | Ponto simulado no Wokwi com ESP32: contagem da fila, previsão de espera e envio IoT |
 | Computer Science               | Regra lógica que decide quando o ventilador do abrigo liga                            |
 
@@ -262,7 +269,7 @@ A busca por pontuação deste repositório é a parte avaliada em Pensamento Com
 
 ## Fontes consultadas
 
-Todas consultadas em 05/11/2026.
+Consultadas em 05/11/2026, exceto quando indicado.
 
 - SPTrans — Gratuidade 60 a 64 anos: https://www.sptrans.com.br/perguntas-e-respostas/?sobre=gratuidade-60-64
 - Portal SP156 — Bilhete Único Especial da Pessoa Idosa: https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?conteudo=4268
@@ -277,6 +284,9 @@ Todas consultadas em 05/11/2026.
 - Portal SP156 — Reclamar de intervalo excessivo da linha: https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=982
 - Agência SP / Defesa Civil — Orientações para enchentes: https://www.agenciasp.sp.gov.br/defesa-civil-orientacoes-enchentes/
 - Ministério da Saúde — Ondas de calor: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/o/ondas-de-calor
+- INMET — Dados históricos (consultado em 06/11/2026): https://portal.inmet.gov.br/dadoshistoricos
+- CRESESB — SunData (consultado em 06/11/2026): https://cresesb.cepel.br/index.php?section=sundata
+- Metrô de São Paulo — Emissões por passageiro-km (consultado em 06/11/2026): https://www.metro.sp.gov.br/2020/09/22/funcionamento-do-metro-evita-a-emissao-de-842-mil-toneladas-de-co2-em-apenas-um-ano/
 
 ## Vídeo técnico
 

@@ -124,11 +124,44 @@
     "id": 12,
     "categoria": "Clima e Segurança",
     "titulo": "Calor forte esperando o ônibus: como se proteger",
-    "palavras_chave": ["calor", "onda de calor", "sol forte", "muito quente", "desidratacao", "temperatura", "ventilador"],
+    "palavras_chave": ["calor", "onda de calor", "sol forte", "muito quente", "desidratacao", "temperatura"],
     "resposta": "Em dias muito quentes, beba água mesmo sem sede e evite ficar no sol entre 10h e 16h. Prefira esperar na sombra ou em um abrigo coberto. Idosos e crianças sentem menos sede e precisam de mais atenção. Evite bebidas alcoólicas e com cafeína. Tontura, confusão ou boca muito seca podem ser sinais de desidratação: procure ajuda.",
     "documentos": ["Nenhum documento é necessário"],
     "onde": "Em caso de mal-estar: UBS mais próxima ou SAMU (telefone 192)",
     "fonte": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/o/ondas-de-calor",
     "verificado_em": "2026-11-05"
+  },
+  {
+    "id": 13,
+    "categoria": "Energia e Sustentabilidade",
+    "titulo": "Ponto Fresco: o ventilador movido a energia solar do Ponto Vivo",
+    "palavras_chave": ["ventilador", "energia solar", "painel solar", "ponto fresco", "ponto vivo", "bateria", "conta de luz"],
+    "resposta": "No abrigo Ponto Vivo, dois ventiladores pequenos de 20 W funcionam com um painel solar de 150 W e uma bateria de 50 Ah, sem conta de luz. Em São Paulo, um painel inclinado recebe em média de 4,1 a 5,2 kWh de sol por m² por dia, conforme o mês (dados do CRESESB). Pelos cálculos do projeto, isso basta até no dia mais quente de 2025. Atenção: o Ponto Vivo é um projeto acadêmico e esses valores são estimativas, não um serviço instalado na cidade.",
+    "documentos": ["Nenhum documento é necessário"],
+    "onde": "Abrigos do projeto Ponto Vivo (protótipo acadêmico). Detalhes dos cálculos na opção Energia do Ponto Vivo do menu",
+    "fonte": "https://cresesb.cepel.br/index.php?section=sundata",
+    "verificado_em": "2026-11-06"
+  },
+  {
+    "id": 14,
+    "categoria": "Energia e Sustentabilidade",
+    "titulo": "Por que o ventilador do ponto liga só com calor e gente esperando",
+    "palavras_chave": ["desligou", "ventilador desligou", "ventilador nao liga", "liga sozinho", "nao ligou", "economia de energia", "economizar energia", "consumo", "gasta energia"],
+    "resposta": "O ventilador liga sozinho quando a temperatura chega a 30 °C, tem gente no ponto e a bateria tem carga. Em 2025, a estação do INMET no Mirante de Santana registrou 332 horas com 30 °C ou mais entre 5h e 23h, em 85 dias do ano. Ligando só nessas horas, o ventilador gasta cerca de 89% menos energia do que se ficasse ligado das 10h às 18h todos os dias. Por isso dá para usar um painel solar menor e mais barato. Em dias mais frescos, o ventilador fica desligado de propósito.",
+    "documentos": ["Nenhum documento é necessário"],
+    "onde": "Abrigos do projeto Ponto Vivo (protótipo acadêmico)",
+    "fonte": "https://portal.inmet.gov.br/dadoshistoricos",
+    "verificado_em": "2026-11-06"
+  },
+  {
+    "id": 15,
+    "categoria": "Energia e Sustentabilidade",
+    "titulo": "Ônibus ou carro: quanto CO2 você deixa de emitir",
+    "palavras_chave": ["co2", "carbono", "poluicao", "meio ambiente", "carro", "emissao", "sustentavel"],
+    "resposta": "Segundo o Metrô de São Paulo, na região metropolitana um ônibus emite em média 80 g de CO2 por passageiro a cada quilômetro, e um carro a gasolina emite 120 g. Quem troca o carro pelo ônibus num trajeto de 20 km por dia, 22 dias por mês, deixa de emitir cerca de 17,6 kg de CO2 por mês. Metrô e trem emitem ainda menos. Os números são médias e mudam conforme o veículo e a lotação.",
+    "documentos": ["Nenhum documento é necessário"],
+    "onde": "Ônibus municipais, Metrô e CPTM",
+    "fonte": "https://www.metro.sp.gov.br/2020/09/22/funcionamento-do-metro-evita-a-emissao-de-842-mil-toneladas-de-co2-em-apenas-um-ano/",
+    "verificado_em": "2026-11-06"
   }
 ]

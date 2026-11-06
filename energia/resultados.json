@@ -1,0 +1,127 @@
+{
+  "clima": {
+    "horas_quentes_ano": 332,
+    "dias_quentes_ano": 85,
+    "temperatura_liga_c": 30
+  },
+  "consumo_kwh_ano": {
+    "eletronica": 8.8,
+    "ventilador_inteligente": 13.3,
+    "ventilador_timer": 116.8,
+    "total_inteligente": 22.0,
+    "total_timer": 125.6,
+    "economia_controle_pct": 88.6
+  },
+  "solar": {
+    "mes_critico": 10,
+    "painel_w": 150,
+    "bateria_ah": 50,
+    "bateria_wh": 600,
+    "geracao_anual_kwh": 191.0,
+    "meses": [
+      {
+        "mes": 1,
+        "horas_quentes_pior_dia": 7,
+        "energia_pior_dia_wh": 304.0,
+        "irradiacao_kwh_m2_dia": 4.72,
+        "painel_necessario_w": 85.9
+      },
+      {
+        "mes": 2,
+        "horas_quentes_pior_dia": 9,
+        "energia_pior_dia_wh": 384.0,
+        "irradiacao_kwh_m2_dia": 5.22,
+        "painel_necessario_w": 98.1
+      },
+      {
+        "mes": 3,
+        "horas_quentes_pior_dia": 7,
+        "energia_pior_dia_wh": 304.0,
+        "irradiacao_kwh_m2_dia": 4.83,
+        "painel_necessario_w": 83.9
+      },
+      {
+        "mes": 4,
+        "horas_quentes_pior_dia": 3,
+        "energia_pior_dia_wh": 144.0,
+        "irradiacao_kwh_m2_dia": 4.7,
+        "painel_necessario_w": 40.9
+      },
+      {
+        "mes": 5,
+        "horas_quentes_pior_dia": 0,
+        "energia_pior_dia_wh": 24.0,
+        "irradiacao_kwh_m2_dia": 4.24,
+        "painel_necessario_w": 7.5
+      },
+      {
+        "mes": 6,
+        "horas_quentes_pior_dia": 0,
+        "energia_pior_dia_wh": 24.0,
+        "irradiacao_kwh_m2_dia": 4.13,
+        "painel_necessario_w": 7.7
+      },
+      {
+        "mes": 7,
+        "horas_quentes_pior_dia": 0,
+        "energia_pior_dia_wh": 24.0,
+        "irradiacao_kwh_m2_dia": 4.12,
+        "painel_necessario_w": 7.8
+      },
+      {
+        "mes": 8,
+        "horas_quentes_pior_dia": 5,
+        "energia_pior_dia_wh": 224.0,
+        "irradiacao_kwh_m2_dia": 4.99,
+        "painel_necessario_w": 59.9
+      },
+      {
+        "mes": 9,
+        "horas_quentes_pior_dia": 6,
+        "energia_pior_dia_wh": 264.0,
+        "irradiacao_kwh_m2_dia": 4.5,
+        "painel_necessario_w": 78.2
+      },
+      {
+        "mes": 10,
+        "horas_quentes_pior_dia": 10,
+        "energia_pior_dia_wh": 424.0,
+        "irradiacao_kwh_m2_dia": 4.64,
+        "painel_necessario_w": 121.8
+      },
+      {
+        "mes": 11,
+        "horas_quentes_pior_dia": 6,
+        "energia_pior_dia_wh": 264.0,
+        "irradiacao_kwh_m2_dia": 4.7,
+        "painel_necessario_w": 74.9
+      },
+      {
+        "mes": 12,
+        "horas_quentes_pior_dia": 10,
+        "energia_pior_dia_wh": 424.0,
+        "irradiacao_kwh_m2_dia": 5.05,
+        "painel_necessario_w": 111.9
+      }
+    ]
+  },
+  "custos_10_anos_r": {
+    "tarifa_sem_impostos_r_kwh": 0.7894,
+    "tarifa_com_impostos_r_kwh": 1.0252,
+    "conta_minima_mes": 30.76,
+    "rede_ponto_sem_energia": 6271,
+    "rede_ponto_com_energia": 306,
+    "solar_com_bateria": 3150,
+    "trocas_bateria": 1
+  },
+  "co2_kg_ano": {
+    "rede_inteligente": 0.85,
+    "rede_timer": 4.83,
+    "solar_operacao": 0
+  },
+  "onibus_x_carro": {
+    "km_mes": 440,
+    "co2_evitado_kg_mes": 17.6,
+    "co2_evitado_kg_ano": 211.2
+  }
+}

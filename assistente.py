@@ -11,6 +11,7 @@ from base_conhecimento import LIMITE_MEDIA, confianca
 
 CAMINHO_HISTORICO = "data/historico.json"
 CAMINHO_CSV = "data/atendimentos.csv"
+CAMINHO_ENERGIA = "energia/resultados.json"  # gerado por energia/calculos.py
 
 # Colunas do histórico e do CSV
 CAMPOS_ATENDIMENTO = ["data", "origem", "pergunta", "id_orientacao", "encontrou",
@@ -162,6 +163,58 @@ class Assistente:
                 tempo = round(time.time() - inicio, 1)
                 self.registrar("categoria", categoria, orientacao, True, ajudou, 1, tempo)
                 inicio = time.time()
+
+    def energia(self):
+        """Mostra a análise de energia do abrigo (contribuição de Energias Renováveis).
+        Os números vêm de energia/resultados.json, gerado por energia/calculos.py."""
+        try:
+            with open(CAMINHO_ENERGIA, "r", encoding="utf-8") as arquivo:
+                r = json.load(arquivo)
+        except (FileNotFoundError, json.JSONDecodeError):
+            tela.erro("Análise de energia não encontrada. Rode: python energia/calculos.py")
+            return
+
+        clima, consumo, solar = r["clima"], r["consumo_kwh_ano"], r["solar"]
+        custos, onibus = r["custos_10_anos_r"], r["onibus_x_carro"]
+
+        print()
+        tela.caixa([("Energia do Ponto Vivo", ("negrito",)),
+                    ("Como alimentar o ventilador e a eletrônica do abrigo", ("apagado",))])
+
+        tela.secao("Quando o ventilador precisa ligar")
+        print(tela.quebrar(f"Em 2025, São Paulo teve {clima['horas_quentes_ano']} horas com "
+                           f"{clima['temperatura_liga_c']} °C ou mais (das 5h às 23h), em "
+                           f"{clima['dias_quentes_ano']} dias. Ligando só nessas horas, o ventilador gasta "
+                           f"{tela.numero(consumo['economia_controle_pct'])}% menos energia do que num timer das 10h às 18h.", 4))
+
+        tela.secao("Comparação em 10 anos")
+        linhas = [
+            ("Solar + bateria (ponto sem energia)", custos["solar_com_bateria"]),
+            ("Rede elétrica (ponto sem energia)", custos["rede_ponto_sem_energia"]),
+            ("Rede elétrica (ponto que já tem energia)", custos["rede_ponto_com_energia"]),
+        ]
+        for nome, valor in linhas:
+            print(f"    {nome:<42}" + tela.cor(f"R$ {tela.numero(valor, 0)}", "ciano", "negrito"))
+        print(tela.quebrar(f"Sistema solar: painel de {solar['painel_w']} W e bateria de "
+                           f"{solar['bateria_ah']} Ah. A rede cobra no mínimo 30 kWh por mês "
+                           f"(R$ {tela.numero(custos['conta_minima_mes'], 2)} com impostos), mesmo o ponto gastando "
+                           f"cerca de {tela.numero(consumo['total_inteligente'] / 12)} kWh.", 4))
+
+        tela.secao("Recomendação")
+        print(tela.quebrar("Ponto sem energia: usar solar com bateria. Sai mais barato que fazer uma "
+                           "ligação nova e continua funcionando quando falta luz.", 4))
+        print(tela.quebrar("Ponto que já tem energia: usar a rede, com o ventilador ligando só "
+                           "com calor e gente esperando.", 4))
+
+        tela.secao("Você também pode ajudar")
+        print(tela.quebrar(f"Trocar o carro pelo ônibus em {onibus['km_mes']} km por mês evita cerca de "
+                           f"{tela.numero(onibus['co2_evitado_kg_mes'])} kg de CO2 por mês (médias do Metrô de SP).", 4))
+
+        print()
+        tela.aviso(tela.quebrar("Limitações: preços de equipamentos e custo de ligação são estimativas. "
+                                "A temperatura é da estação do INMET no Mirante de Santana; dentro do "
+                                "abrigo pode ser diferente. Valores não são garantidos.", 2))
+        tela.dica("  Detalhes, dados e fontes: energia/README.md")
 
     def encerrar(self):
         """Pede a nota de facilidade (1 a 5), grava nos atendimentos desta execução

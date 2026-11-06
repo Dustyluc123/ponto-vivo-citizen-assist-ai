@@ -10,6 +10,7 @@ OPCOES = [
     ("2", "Navegar por categorias"),
     ("3", "Ver indicadores"),
     ("4", "Exportar atendimentos (CSV)"),
+    ("5", "Energia do Ponto Vivo"),
     ("0", "Sair"),
 ]
 
@@ -38,7 +39,7 @@ def main():
     try:
         while True:
             mostrar_menu()
-            opcao = ler_opcao("\nEscolha uma opção: ", 0, 4)
+            opcao = ler_opcao("\nEscolha uma opção: ", 0, 5)
             if opcao == 1:
                 assistente.perguntar()
             elif opcao == 2:
@@ -47,6 +48,8 @@ def main():
                 assistente.indicadores()
             elif opcao == 4:
                 assistente.exportar_csv()
+            elif opcao == 5:
+                assistente.energia()
             else:
                 assistente.encerrar()
                 break
