@@ -190,10 +190,12 @@ ponto-vivo-citizen-assist-ai/
 │   ├── calculos.py             # Análise solar x rede, com dados reais
 │   ├── resultados.json         # Resultados usados pela opção 5 do menu
 │   └── dados/                  # Temperatura (INMET) e irradiação solar (CRESESB)
-└── dsa/                        # Contribuição de Data Structures and Algorithms
-    ├── main.py                 # Menu do cadastro de serviços
-    ├── lista_encadeada.py      # Lista encadeada própria e Merge Sort
-    └── testes.py               # Testes automáticos
+├── dsa/                        # Contribuição de Data Structures and Algorithms
+│   ├── main.py                 # Menu do cadastro de serviços
+│   ├── lista_encadeada.py      # Lista encadeada própria e Merge Sort
+│   └── testes.py               # Testes automáticos
+└── mmc/                        # Contribuição de Modelagem Matemática e Computacional
+    └── mobilidade_frota.ipynb  # Sistema linear da frota e matriz de redistribuição
 ```
 
 ## Como rodar
@@ -253,6 +255,7 @@ _A preencher depois do teste com pelo menos 3 pessoas de fora do projeto e 10 at
 | ------------------------------ | ------------------------------------------------------------------------------------- |
 | Soluções em Energias Renováveis | Análise solar x rede do abrigo com ventilador, opção 5 do menu e orientações 13 a 15. Detalhes em [`energia/`](energia/) |
 | Data Structures and Algorithms | Cadastro dos serviços em lista encadeada própria, com busca sequencial e Merge Sort. Detalhes em [`dsa/`](dsa/) |
+| Modelagem Matemática e Computacional | Reconstrução da frota por sistema linear e redistribuição por transformação linear. Detalhes em [`mmc/`](mmc/) |
 | Computer Organization and Architecture | Ponto simulado no Wokwi com ESP32: contagem da fila, previsão de espera e envio IoT |
 | Computer Science               | Regra lógica que decide quando o ventilador do abrigo liga                            |
 
