@@ -1,0 +1,537 @@
+Primeira execução: serviços importados da base do assistente Ponto Vivo.
+15 serviço(s) carregado(s).
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 2
+  ID do serviço (Enter para voltar): 7
+  Busca sequencial: 7 de 15 nós visitados.
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ #7  Integração do Bilhete Único: quantos ônibus com uma tarifa       │
+│ Viagem e Informação                                                  │
+╰──────────────────────────────────────────────────────────────────────╯
+  Com o Bilhete Único Comum, você paga uma tarifa e pode pegar até 4
+  ônibus municipais em 3 horas. Com Metrô ou CPTM, a integração permite
+  1 viagem em trilhos e até 3 ônibus, e o trilho precisa ser usado nas 2
+  primeiras horas. Desde 6 de janeiro de 2026, a tarifa básica do ônibus
+  é R$ 5,30.
+
+  Requisitos
+    • Bilhete Único com crédito
+
+  Onde
+    Ônibus municipais, Metrô e CPTM
+
+  Fonte
+    https://www.sptrans.com.br/perguntas-e-respostas/?sobre=bilhete-unico
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 2
+  ID do serviço (Enter para voltar): 99
+  Busca sequencial: 15 de 15 nós visitados.
+Nenhum serviço com o ID 99.
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 2
+  ID do serviço (Enter para voltar): abc
+O ID deve ser um número inteiro positivo.
+  ID do serviço (Enter para voltar): 
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 3
+  1  Título
+  2  Categoria
+  Pesquisar por: 1
+  Digite o termo: bilhete
+  Busca sequencial: 15 nós visitados.
+5 serviço(s) encontrado(s).
+
+   ID  Título                                  Categoria
+    2  Bilhete Único Especial da Pessoa Idos…  Tarifas e Direitos
+    3  Bilhete Único de Estudante (meia tari…  Tarifas e Direitos
+    4  Bilhete Único Especial da Pessoa com …  Tarifas e Direitos
+    7  Integração do Bilhete Único: quantos …  Viagem e Informação
+    8  Onde e como recarregar o Bilhete Único  Viagem e Informação
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 3
+  1  Título
+  2  Categoria
+  Pesquisar por: 2
+  Digite o termo: ENERGIA
+  Busca sequencial: 15 nós visitados.
+3 serviço(s) encontrado(s).
+
+   ID  Título                                  Categoria
+   13  Ponto Fresco: o ventilador movido a e…  Energia e Sustentabilidade
+   14  Por que o ventilador do ponto liga só…  Energia e Sustentabilidade
+   15  Ônibus ou carro: quanto CO2 você deix…  Energia e Sustentabilidade
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 3
+  1  Título
+  2  Categoria
+  Pesquisar por: 1
+  Digite o termo: metrô
+  Busca sequencial: 15 nós visitados.
+Nenhum serviço encontrado para "metrô".
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 1
+
+  Cadastrar serviço
+  ID (Enter para usar 16): 3
+O ID 3 já está em uso por "Bilhete Único de Estudante (meia tarifa ou gratuidade)". Escolha outro.
+  ID (Enter para usar 16): 
+  Título: Agendar Bilhete Único Especial da PcD
+
+  Categorias existentes
+    1  Tarifas e Direitos
+    2  Viagem e Informação
+    3  Clima e Segurança
+    4  Energia e Sustentabilidade
+    Digite o número de uma categoria ou o nome de uma nova.
+  Categoria: 1
+  Descrição: Agendamento do cadastro presencial para a pessoa com deficiência.
+  Requisitos (separe por ; ou deixe vazio): RG; CPF; Laudo médico SPTrans
+  Onde é feito: Posto de Atendimento SPTrans
+  Fonte (link, opcional): https://www.sptrans.com.br/
+Serviço #16 cadastrado. Total: 16.
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 2
+  ID do serviço (Enter para voltar): 16
+  Busca sequencial: 16 de 16 nós visitados.
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ #16  Agendar Bilhete Único Especial da PcD                           │
+│ Tarifas e Direitos                                                   │
+╰──────────────────────────────────────────────────────────────────────╯
+  Agendamento do cadastro presencial para a pessoa com deficiência.
+
+  Requisitos
+    • RG
+    • CPF
+    • Laudo médico SPTrans
+
+  Onde
+    Posto de Atendimento SPTrans
+
+  Fonte
+    https://www.sptrans.com.br/
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 4
+  ID do serviço a atualizar (Enter para voltar): 16
+  Enter mantém o valor atual entre colchetes. O ID não pode ser alterado.
+  Título [Agendar Bilhete Único Especial da PcD]: Agendamento do Bilhete Único Especial da Pessoa com Deficiência
+
+  Categorias existentes
+    1  Tarifas e Direitos
+    2  Viagem e Informação
+    3  Clima e Segurança
+    4  Energia e Sustentabilidade
+    Digite o número de uma categoria ou o nome de uma nova.
+  Categoria [Tarifas e Direitos]: 
+  Descrição [Enter mantém]: 
+  Onde é feito [Enter mantém]: 
+  Requisitos [RG; CPF; Laudo médico SPTrans]: 
+  Fonte [Enter mantém]: 
+Serviço #16 atualizado.
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 2
+  ID do serviço (Enter para voltar): 16
+  Busca sequencial: 16 de 16 nós visitados.
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ #16  Agendamento do Bilhete Único Especial da Pessoa com Deficiência │
+│ Tarifas e Direitos                                                   │
+╰──────────────────────────────────────────────────────────────────────╯
+  Agendamento do cadastro presencial para a pessoa com deficiência.
+
+  Requisitos
+    • RG
+    • CPF
+    • Laudo médico SPTrans
+
+  Onde
+    Posto de Atendimento SPTrans
+
+  Fonte
+    https://www.sptrans.com.br/
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 5
+  ID do serviço a excluir (Enter para voltar): 16
+  Excluir "Agendamento do Bilhete Único Especial da Pessoa com Deficiência"? (s/n): talvez
+Responda s ou n.
+  Excluir "Agendamento do Bilhete Único Especial da Pessoa com Deficiência"? (s/n): s
+Serviço #16 excluído. Total: 15.
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 5
+  ID do serviço a excluir (Enter para voltar): 99
+Nenhum serviço com o ID 99.
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 6
+  1  ID (crescente)
+  2  Título (A a Z)
+  3  Categoria e depois título (A a Z)
+  Ordenar por: 2
+Lista ordenada por Título (A a Z) com Merge Sort.
+  35 comparações para 15 registros.
+
+   ID  Título                                  Categoria
+    5  Atende+: transporte porta a porta par…  Tarifas e Direitos
+    3  Bilhete Único de Estudante (meia tari…  Tarifas e Direitos
+    4  Bilhete Único Especial da Pessoa com …  Tarifas e Direitos
+    2  Bilhete Único Especial da Pessoa Idos…  Tarifas e Direitos
+   12  Calor forte esperando o ônibus: como …  Clima e Segurança
+    6  Domingão Tarifa Zero: ônibus de graça…  Tarifas e Direitos
+    1  Gratuidade no ônibus para pessoas de …  Tarifas e Direitos
+    7  Integração do Bilhete Único: quantos …  Viagem e Informação
+   11  O que fazer com alagamento no caminho…  Clima e Segurança
+    8  Onde e como recarregar o Bilhete Único  Viagem e Informação
+   15  Ônibus ou carro: quanto CO2 você deix…  Energia e Sustentabilidade
+   13  Ponto Fresco: o ventilador movido a e…  Energia e Sustentabilidade
+   14  Por que o ventilador do ponto liga só…  Energia e Sustentabilidade
+   10  Reclamar de ônibus que demorou ou não…  Viagem e Informação
+    9  Saber quando o ônibus vai chegar (Olh…  Viagem e Informação
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 6
+  1  ID (crescente)
+  2  Título (A a Z)
+  3  Categoria e depois título (A a Z)
+  Ordenar por: 3
+Lista ordenada por Categoria e depois título (A a Z) com Merge Sort.
+  38 comparações para 15 registros.
+
+   ID  Título                                  Categoria
+   12  Calor forte esperando o ônibus: como …  Clima e Segurança
+   11  O que fazer com alagamento no caminho…  Clima e Segurança
+   15  Ônibus ou carro: quanto CO2 você deix…  Energia e Sustentabilidade
+   13  Ponto Fresco: o ventilador movido a e…  Energia e Sustentabilidade
+   14  Por que o ventilador do ponto liga só…  Energia e Sustentabilidade
+    5  Atende+: transporte porta a porta par…  Tarifas e Direitos
+    3  Bilhete Único de Estudante (meia tari…  Tarifas e Direitos
+    4  Bilhete Único Especial da Pessoa com …  Tarifas e Direitos
+    2  Bilhete Único Especial da Pessoa Idos…  Tarifas e Direitos
+    6  Domingão Tarifa Zero: ônibus de graça…  Tarifas e Direitos
+    1  Gratuidade no ônibus para pessoas de …  Tarifas e Direitos
+    7  Integração do Bilhete Único: quantos …  Viagem e Informação
+    8  Onde e como recarregar o Bilhete Único  Viagem e Informação
+   10  Reclamar de ônibus que demorou ou não…  Viagem e Informação
+    9  Saber quando o ônibus vai chegar (Olh…  Viagem e Informação
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 6
+  1  ID (crescente)
+  2  Título (A a Z)
+  3  Categoria e depois título (A a Z)
+  Ordenar por: 1
+Lista ordenada por ID (crescente) com Merge Sort.
+  37 comparações para 15 registros.
+
+   ID  Título                                  Categoria
+    1  Gratuidade no ônibus para pessoas de …  Tarifas e Direitos
+    2  Bilhete Único Especial da Pessoa Idos…  Tarifas e Direitos
+    3  Bilhete Único de Estudante (meia tari…  Tarifas e Direitos
+    4  Bilhete Único Especial da Pessoa com …  Tarifas e Direitos
+    5  Atende+: transporte porta a porta par…  Tarifas e Direitos
+    6  Domingão Tarifa Zero: ônibus de graça…  Tarifas e Direitos
+    7  Integração do Bilhete Único: quantos …  Viagem e Informação
+    8  Onde e como recarregar o Bilhete Único  Viagem e Informação
+    9  Saber quando o ônibus vai chegar (Olh…  Viagem e Informação
+   10  Reclamar de ônibus que demorou ou não…  Viagem e Informação
+   11  O que fazer com alagamento no caminho…  Clima e Segurança
+   12  Calor forte esperando o ônibus: como …  Clima e Segurança
+   13  Ponto Fresco: o ventilador movido a e…  Energia e Sustentabilidade
+   14  Por que o ventilador do ponto liga só…  Energia e Sustentabilidade
+   15  Ônibus ou carro: quanto CO2 você deix…  Energia e Sustentabilidade
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 7
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ Análise dos serviços cadastrados                                     │
+╰──────────────────────────────────────────────────────────────────────╯
+  Total de serviços: 15
+  Categorias: 4
+
+  Serviços por categoria
+    Tarifas e Direitos          ██████ 6
+    Viagem e Informação         ████ 4
+    Energia e Sustentabilidade  ███ 3
+    Clima e Segurança           ██ 2
+
+  Requisitos
+    Média por serviço: 2,1
+    Serviços que não pedem nada: 0
+    Serviço que mais pede: #3 Bilhete Único de Estudante (meia tarifa ou
+    gratuidade) (5 requisitos)
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 9
+
+  cabeça -> [1] -> [2] -> [3] -> [4] -> [5] -> [6] -> [7] -> [8] -> [9]
+  -> [10] -> [11] -> [12] -> [13] -> [14] -> [15] -> None
+  cabeça = 1   cauda = 15   tamanho = 15
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 0
+Até logo.

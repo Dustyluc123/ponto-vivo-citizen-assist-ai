@@ -1,0 +1,46 @@
+test_arquivo_com_registros_ruins (__main__.TestAnaliseEArmazenamento) ... ok
+test_contagem_por_categoria (__main__.TestAnaliseEArmazenamento) ... ok
+test_importa_base_do_ponto_vivo (__main__.TestAnaliseEArmazenamento) ... ok
+test_salvar_e_carregar (__main__.TestAnaliseEArmazenamento) ... ok
+test_atualiza_campos_sem_mudar_a_lista (__main__.TestAtualizacao) ... ok
+test_atualizar_inexistente (__main__.TestAtualizacao) ... ok
+test_nao_altera_id (__main__.TestAtualizacao) ... ok
+test_valor_invalido_nao_altera_nada (__main__.TestAtualizacao) ... ok
+test_buscar_id_existente_conta_nos_visitados (__main__.TestBusca) ... ok
+test_buscar_id_inexistente_visita_todos (__main__.TestBusca) ... ok
+test_buscar_id_invalido (__main__.TestBusca) ... ok
+test_pesquisa_com_termo_ou_campo_invalido (__main__.TestBusca) ... ok
+test_pesquisa_por_categoria (__main__.TestBusca) ... ok
+test_pesquisa_sem_acento_e_sem_maiuscula (__main__.TestBusca) ... ok
+test_pesquisa_sem_resultado (__main__.TestBusca) ... ok
+test_id_duplicado_e_recusado (__main__.TestInsercao) ... ok
+test_insere_no_fim_e_mantem_ordem (__main__.TestInsercao) ... ok
+test_atualizar_na_lista_vazia (__main__.TestListaVazia) ... ok
+test_buscar_na_lista_vazia (__main__.TestListaVazia) ... ok
+test_comeca_vazia (__main__.TestListaVazia) ... ok
+test_indicadores_da_lista_vazia (__main__.TestListaVazia) ... ok
+test_ordenar_lista_vazia (__main__.TestListaVazia) ... ok
+test_pesquisar_na_lista_vazia (__main__.TestListaVazia) ... ok
+test_remover_da_lista_vazia (__main__.TestListaVazia) ... ok
+test_comparacoes_nao_passam_de_n_log_n (__main__.TestOrdenacao) ... ok
+test_criterio_invalido (__main__.TestOrdenacao) ... ok
+test_e_estavel (__main__.TestOrdenacao) ... ok
+test_inserir_depois_de_ordenar_vai_para_o_fim (__main__.TestOrdenacao) ... ok
+test_ordena_por_categoria_e_titulo (__main__.TestOrdenacao) ... ok
+test_ordena_por_id (__main__.TestOrdenacao) ... ok
+test_ordena_por_titulo_ignorando_acento_e_maiuscula (__main__.TestOrdenacao) ... ok
+test_um_unico_registro (__main__.TestOrdenacao) ... ok
+test_remove_cabeca (__main__.TestRemocao) ... ok
+test_remove_cauda_e_insere_depois (__main__.TestRemocao) ... ok
+test_remove_inexistente (__main__.TestRemocao) ... ok
+test_remove_meio (__main__.TestRemocao) ... ok
+test_remove_todos_ate_esvaziar (__main__.TestRemocao) ... ok
+test_campos_obrigatorios_vazios (__main__.TestValidacaoDoRegistro) ... ok
+test_id_em_texto_e_aceito (__main__.TestValidacaoDoRegistro) ... ok
+test_ids_invalidos (__main__.TestValidacaoDoRegistro) ... ok
+test_requisitos_por_ponto_e_virgula (__main__.TestValidacaoDoRegistro) ... ok
+
+----------------------------------------------------------------------
+Ran 41 tests in 0.014s
+
+OK

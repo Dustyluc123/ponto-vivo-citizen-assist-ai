@@ -1,0 +1,256 @@
+Modo lista vazia: nada será salvo em arquivo.
+0 serviço(s) carregado(s).
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: abc
+Opção inválida. Digite um número de 0 a 9.
+
+Escolha uma opção: 12
+Opção inválida. Digite um número de 0 a 9.
+
+Escolha uma opção: 2
+A lista está vazia. Cadastre um serviço primeiro (opção 1).
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 3
+A lista está vazia. Cadastre um serviço primeiro (opção 1).
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 4
+A lista está vazia. Cadastre um serviço primeiro (opção 1).
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 5
+A lista está vazia. Cadastre um serviço primeiro (opção 1).
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 6
+A lista está vazia. Cadastre um serviço primeiro (opção 1).
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 7
+A lista está vazia. Cadastre um serviço primeiro (opção 1).
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 8
+A lista está vazia. Cadastre um serviço primeiro (opção 1).
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 9
+
+  cabeça -> None
+  cabeça = None   cauda = None   tamanho = 0
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 1
+
+  Cadastrar serviço
+  ID (Enter para usar 1): abc
+O ID deve ser um número inteiro positivo.
+  ID (Enter para usar 1): -3
+O ID deve ser um número inteiro positivo.
+  ID (Enter para usar 1): 
+  Título:    
+Este campo não pode ficar vazio.
+  Título: Linha 714 aos domingos
+  Categoria: Viagem e Informação
+  Descrição: Horário de domingo da linha 714.
+  Requisitos (separe por ; ou deixe vazio): 
+  Onde é feito: Ponto Vivo
+  Fonte (link, opcional): 
+Serviço #1 cadastrado. Total: 1.
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 2
+  ID do serviço (Enter para voltar): 1
+  Busca sequencial: 1 de 1 nós visitados.
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ #1  Linha 714 aos domingos                                           │
+│ Viagem e Informação                                                  │
+╰──────────────────────────────────────────────────────────────────────╯
+  Horário de domingo da linha 714.
+
+  Requisitos
+    Nenhum requisito informado.
+
+  Onde
+    Ponto Vivo
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 9
+
+  cabeça -> [1] -> None
+  cabeça = 1   cauda = 1   tamanho = 1
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ PONTO VIVO  ·  Cadastro de serviços                                  │
+│ Lista encadeada própria · Data Structures and Algorithms             │
+╰──────────────────────────────────────────────────────────────────────╯
+  1  Cadastrar serviço
+  2  Consultar por ID
+  3  Pesquisar por título ou categoria
+  4  Atualizar serviço
+  5  Excluir serviço
+  6  Ordenar e listar
+  7  Análise (indicadores)
+  8  Listar na ordem atual
+  9  Ver a estrutura da lista (nós)
+  0  Sair
+
+Escolha uma opção: 0
+Até logo.

@@ -1,0 +1,184 @@
+[
+  {
+    "id": 1,
+    "titulo": "Gratuidade no ônibus para pessoas de 60 a 64 anos",
+    "categoria": "Tarifas e Direitos",
+    "descricao": "Quem tem de 60 a 64 anos não paga ônibus municipal em São Paulo. A gratuidade fica no Bilhete Único Comum e precisa ser carregada todo mês em uma máquina de recarga. A cota do mês não acumula para o mês seguinte. Quem já tem Bilhete Único Comum não precisa fazer novo cadastro.",
+    "requisitos": [
+      "Bilhete Único Comum",
+      "Documento oficial com foto (para quem ainda não tem o cartão)",
+      "CPF",
+      "Comprovante de residência dos últimos 6 meses"
+    ],
+    "local": "Recarga da cota: máquinas Recarregue Aqui em ônibus, terminais e estações. Novo cartão: cadastro no site da SPTrans e retirada em um Posto de Atendimento da SPTrans.",
+    "fonte": "https://www.sptrans.com.br/perguntas-e-respostas/?sobre=gratuidade-60-64"
+  },
+  {
+    "id": 2,
+    "titulo": "Bilhete Único Especial da Pessoa Idosa (65 anos ou mais)",
+    "categoria": "Tarifas e Direitos",
+    "descricao": "Quem tem 65 anos ou mais e mora na capital ou na Região Metropolitana de São Paulo pode pedir o Bilhete Único Especial da Pessoa Idosa, que dá gratuidade no transporte. O pedido é gratuito e precisa ser feito pela própria pessoa idosa. O cartão é enviado para o endereço cadastrado.",
+    "requisitos": [
+      "Documento oficial com foto (RG, CNH, CIE ou protocolo de refugiado)",
+      "CPF, se não estiver no documento",
+      "Comprovante de residência recente",
+      "Foto 3x4 com fundo branco"
+    ],
+    "local": "Portal de Atendimento da SPTrans (sptrans.com.br/atendimento), Central 156 ou, com agendamento, Praças de Atendimento das Subprefeituras e Descomplica SP",
+    "fonte": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?conteudo=4268"
+  },
+  {
+    "id": 3,
+    "titulo": "Bilhete Único de Estudante (meia tarifa ou gratuidade)",
+    "categoria": "Tarifas e Direitos",
+    "descricao": "Estudantes podem ter meia tarifa ou gratuidade nos ônibus municipais. Primeiro a escola precisa enviar os dados da matrícula para a SPTrans. Depois o estudante faz o cadastro no portal da SPTrans/DNE e paga a taxa de emissão. A gratuidade para baixa renda depende do CadÚnico; enquanto ela é analisada, dá para usar a meia tarifa.",
+    "requisitos": [
+      "Documento com foto",
+      "CPF, se não estiver no documento",
+      "Comprovante de residência dos últimos 6 meses",
+      "Foto 3x4 com fundo branco",
+      "Matrícula informada pela escola"
+    ],
+    "local": "Portal do Bilhete Único de Estudante (estudante.sptrans.com.br)",
+    "fonte": "https://www.sptrans.com.br/perguntas-e-respostas/?sobre=bilhete-estudante"
+  },
+  {
+    "id": 4,
+    "titulo": "Bilhete Único Especial da Pessoa com Deficiência",
+    "categoria": "Tarifas e Direitos",
+    "descricao": "Pessoas com deficiência, permanente ou temporária, que moram em São Paulo ou na Região Metropolitana podem pedir o Bilhete Único Especial, que dá gratuidade nos ônibus municipais, no Metrô e na CPTM. É preciso imprimir o formulário da SPTrans e levar ao médico, que preenche com o CID. A emissão é gratuita.",
+    "requisitos": [
+      "Formulário da SPTrans preenchido pelo médico (vale 90 dias)",
+      "Documento com foto",
+      "Comprovante de residência dos últimos 6 meses"
+    ],
+    "local": "Site do Bilhete Único da SPTrans (bilheteunico.sptrans.com.br) ou Central 156",
+    "fonte": "https://www.sptrans.com.br/perguntas-e-respostas/?sobre=bilhete-pcd"
+  },
+  {
+    "id": 5,
+    "titulo": "Atende+: transporte porta a porta para pessoas com deficiência severa",
+    "categoria": "Tarifas e Direitos",
+    "descricao": "O Atende+ é um serviço gratuito da SPTrans que leva de porta a porta pessoas com deficiência física severa, autismo ou surdocegueira que não conseguem usar o ônibus comum sozinhas. Só vale para quem mora no município de São Paulo. O médico preenche a Ficha de Avaliação Médica e a SPTrans analisa o pedido.",
+    "requisitos": [
+      "Ficha de Avaliação Médica preenchida pelo médico",
+      "RG e CPF (ou certidão de nascimento para menores)",
+      "Comprovante de endereço com CEP",
+      "RG e comprovante de endereço do responsável, se houver"
+    ],
+    "local": "Site da SPTrans (sptrans.com.br/atende) ou Posto de Atendimento da SPTrans. Dúvidas: Central 156",
+    "fonte": "https://www.sptrans.com.br/atende/requisitos"
+  },
+  {
+    "id": 6,
+    "titulo": "Domingão Tarifa Zero: ônibus de graça aos domingos",
+    "categoria": "Tarifas e Direitos",
+    "descricao": "Todos os domingos, das 0h às 23h59, os ônibus municipais de São Paulo são de graça, sem limite de viagens. Também vale no Natal, no Ano Novo e no aniversário da cidade (25 de janeiro). Basta encostar o Bilhete Único no validador. Não vale para Metrô, trens e ônibus intermunicipais.",
+    "requisitos": [
+      "Nenhum documento é necessário"
+    ],
+    "local": "Qualquer ônibus municipal da SPTrans",
+    "fonte": "https://www.sptrans.com.br/perguntas-e-respostas/?sobre=tarifa-zero"
+  },
+  {
+    "id": 7,
+    "titulo": "Integração do Bilhete Único: quantos ônibus com uma tarifa",
+    "categoria": "Viagem e Informação",
+    "descricao": "Com o Bilhete Único Comum, você paga uma tarifa e pode pegar até 4 ônibus municipais em 3 horas. Com Metrô ou CPTM, a integração permite 1 viagem em trilhos e até 3 ônibus, e o trilho precisa ser usado nas 2 primeiras horas. Desde 6 de janeiro de 2026, a tarifa básica do ônibus é R$ 5,30.",
+    "requisitos": [
+      "Bilhete Único com crédito"
+    ],
+    "local": "Ônibus municipais, Metrô e CPTM",
+    "fonte": "https://www.sptrans.com.br/perguntas-e-respostas/?sobre=bilhete-unico"
+  },
+  {
+    "id": 8,
+    "titulo": "Onde e como recarregar o Bilhete Único",
+    "categoria": "Viagem e Informação",
+    "descricao": "Você pode comprar crédito em aplicativos credenciados pela SPTrans, por WhatsApp, em apps de banco ou nas máquinas de autoatendimento de terminais e estações. Depois de comprar pelo app, encoste o cartão em uma máquina Recarregue Aqui para validar o crédito. Nos Postos de Atendimento da SPTrans basta levar o cartão.",
+    "requisitos": [
+      "Bilhete Único"
+    ],
+    "local": "Aplicativos listados em sptrans.com.br/app, máquinas Recarregue Aqui (ônibus, terminais, Metrô e CPTM) e Postos de Atendimento da SPTrans",
+    "fonte": "https://bilheteunico.sptrans.com.br/recarga/"
+  },
+  {
+    "id": 9,
+    "titulo": "Saber quando o ônibus vai chegar (Olho Vivo)",
+    "categoria": "Viagem e Informação",
+    "descricao": "O Olho Vivo, da SPTrans, mostra no mapa onde estão os ônibus de cada linha e a previsão de chegada nos pontos. Ele funciona no navegador do celular. Aplicativos como Moovit e Cittamobi usam os dados do Olho Vivo para mostrar o horário em tempo real.",
+    "requisitos": [
+      "Nenhum documento é necessário"
+    ],
+    "local": "Site Olho Vivo (olhovivo.sptrans.com.br) ou aplicativos que usam os dados da SPTrans",
+    "fonte": "https://www.sptrans.com.br/acompanhe-e-planeje-sua-viagem/"
+  },
+  {
+    "id": 10,
+    "titulo": "Reclamar de ônibus que demorou ou não parou no ponto",
+    "categoria": "Viagem e Informação",
+    "descricao": "Você pode reclamar de demora excessiva, ônibus que passou direto ou outro problema pelo Portal SP156 ou pelo telefone 156. Informe a linha, o local, a data, o horário e, se souber, o número do ônibus. Guarde o número do protocolo para acompanhar a resposta. Se não tiver resposta, procure a Ouvidoria da SPTrans.",
+    "requisitos": [
+      "Número da linha",
+      "Local, data e horário",
+      "Número do ônibus (prefixo), se souber"
+    ],
+    "local": "Portal SP156 (sp156.prefeitura.sp.gov.br), telefone 156 ou Ouvidoria da SPTrans",
+    "fonte": "https://sp156.prefeitura.sp.gov.br/portal/servicos/informacao?servico=982"
+  },
+  {
+    "id": 11,
+    "titulo": "O que fazer com alagamento no caminho ou no ponto",
+    "categoria": "Clima e Segurança",
+    "descricao": "Evite andar ou esperar em áreas alagadas: a água pode esconder buracos e bueiros abertos, e uma correnteza de 15 cm já pode derrubar uma pessoa. Procure um lugar mais alto e seguro. Em emergência ligue 199 (Defesa Civil) ou 193 (Bombeiros). Para receber alertas por SMS, envie seu CEP para 40199.",
+    "requisitos": [
+      "Nenhum documento é necessário"
+    ],
+    "local": "Defesa Civil: telefone 199. Bombeiros: telefone 193. Alertas: SMS com o CEP para 40199",
+    "fonte": "https://www.agenciasp.sp.gov.br/defesa-civil-orientacoes-enchentes/"
+  },
+  {
+    "id": 12,
+    "titulo": "Calor forte esperando o ônibus: como se proteger",
+    "categoria": "Clima e Segurança",
+    "descricao": "Em dias muito quentes, beba água mesmo sem sede e evite ficar no sol entre 10h e 16h. Prefira esperar na sombra ou em um abrigo coberto. Idosos e crianças sentem menos sede e precisam de mais atenção. Evite bebidas alcoólicas e com cafeína. Tontura, confusão ou boca muito seca podem ser sinais de desidratação: procure ajuda.",
+    "requisitos": [
+      "Nenhum documento é necessário"
+    ],
+    "local": "Em caso de mal-estar: UBS mais próxima ou SAMU (telefone 192)",
+    "fonte": "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/o/ondas-de-calor"
+  },
+  {
+    "id": 13,
+    "titulo": "Ponto Fresco: o ventilador movido a energia solar do Ponto Vivo",
+    "categoria": "Energia e Sustentabilidade",
+    "descricao": "No abrigo Ponto Vivo, dois ventiladores pequenos de 20 W funcionam com um painel solar de 150 W e uma bateria de 50 Ah, sem conta de luz. Em São Paulo, um painel inclinado recebe em média de 4,1 a 5,2 kWh de sol por m² por dia, conforme o mês (dados do CRESESB). Pelos cálculos do projeto, isso basta até no dia mais quente de 2025. Atenção: o Ponto Vivo é um projeto acadêmico e esses valores são estimativas, não um serviço instalado na cidade.",
+    "requisitos": [
+      "Nenhum documento é necessário"
+    ],
+    "local": "Abrigos do projeto Ponto Vivo (protótipo acadêmico). Detalhes dos cálculos na opção Energia do Ponto Vivo do menu",
+    "fonte": "https://cresesb.cepel.br/index.php?section=sundata"
+  },
+  {
+    "id": 14,
+    "titulo": "Por que o ventilador do ponto liga só com calor e gente esperando",
+    "categoria": "Energia e Sustentabilidade",
+    "descricao": "O ventilador liga sozinho quando a temperatura chega a 30 °C, tem gente no ponto e a bateria tem carga. Em 2025, a estação do INMET no Mirante de Santana registrou 332 horas com 30 °C ou mais entre 5h e 23h, em 85 dias do ano. Ligando só nessas horas, o ventilador gasta cerca de 89% menos energia do que se ficasse ligado das 10h às 18h todos os dias. Por isso dá para usar um painel solar menor e mais barato. Em dias mais frescos, o ventilador fica desligado de propósito.",
+    "requisitos": [
+      "Nenhum documento é necessário"
+    ],
+    "local": "Abrigos do projeto Ponto Vivo (protótipo acadêmico)",
+    "fonte": "https://portal.inmet.gov.br/dadoshistoricos"
+  },
+  {
+    "id": 15,
+    "titulo": "Ônibus ou carro: quanto CO2 você deixa de emitir",
+    "categoria": "Energia e Sustentabilidade",
+    "descricao": "Segundo o Metrô de São Paulo, na região metropolitana um ônibus emite em média 80 g de CO2 por passageiro a cada quilômetro, e um carro a gasolina emite 120 g. Quem troca o carro pelo ônibus num trajeto de 20 km por dia, 22 dias por mês, deixa de emitir cerca de 17,6 kg de CO2 por mês. Metrô e trem emitem ainda menos. Os números são médias e mudam conforme o veículo e a lotação.",
+    "requisitos": [
+      "Nenhum documento é necessário"
+    ],
+    "local": "Ônibus municipais, Metrô e CPTM",
+    "fonte": "https://www.metro.sp.gov.br/2020/09/22/funcionamento-do-metro-evita-a-emissao-de-842-mil-toneladas-de-co2-em-apenas-um-ano/"
+  }
+]
