@@ -194,8 +194,11 @@ ponto-vivo-citizen-assist-ai/
 │   ├── main.py                 # Menu do cadastro de serviços
 │   ├── lista_encadeada.py      # Lista encadeada própria e Merge Sort
 │   └── testes.py               # Testes automáticos
-└── mmc/                        # Contribuição de Modelagem Matemática e Computacional
-    └── mobilidade_frota.ipynb  # Sistema linear da frota e matriz de redistribuição
+├── mmc/                        # Contribuição de Modelagem Matemática e Computacional
+│   └── mobilidade_frota.ipynb  # Sistema linear da frota e matriz de redistribuição
+└── ml/                         # Contribuição de Modelagem Linear para Aprendizado de Máquina
+    ├── perfil_transporte.ipynb # Regressão logística: perfil de quem usa ônibus e metrô
+    └── relatorio_perfil_transporte.pdf
 ```
 
 ## Como rodar
@@ -256,6 +259,7 @@ _A preencher depois do teste com pelo menos 3 pessoas de fora do projeto e 10 at
 | Soluções em Energias Renováveis | Análise solar x rede do abrigo com ventilador, opção 5 do menu e orientações 13 a 15. Detalhes em [`energia/`](energia/) |
 | Data Structures and Algorithms | Cadastro dos serviços em lista encadeada própria, com busca sequencial e Merge Sort. Detalhes em [`dsa/`](dsa/) |
 | Modelagem Matemática e Computacional | Reconstrução da frota por sistema linear e redistribuição por transformação linear. Detalhes em [`mmc/`](mmc/) |
+| Modelagem Linear para Aprendizado de Máquina | Perfil de quem usa ônibus e metrô em São Paulo (OD 2017) com regressão logística. Detalhes em [`ml/`](ml/) |
 | Computer Organization and Architecture | Ponto simulado no Wokwi com ESP32: contagem da fila, previsão de espera e envio IoT |
 | Computer Science               | Regra lógica que decide quando o ventilador do abrigo liga                            |
 
