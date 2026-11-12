@@ -196,9 +196,13 @@ ponto-vivo-citizen-assist-ai/
 │   └── testes.py               # Testes automáticos
 ├── mmc/                        # Contribuição de Modelagem Matemática e Computacional
 │   └── mobilidade_frota.ipynb  # Sistema linear da frota e matriz de redistribuição
-└── ml/                         # Contribuição de Modelagem Linear para Aprendizado de Máquina
-    ├── perfil_transporte.ipynb # Regressão logística: perfil de quem usa ônibus e metrô
-    └── relatorio_perfil_transporte.pdf
+├── ml/                         # Contribuição de Modelagem Linear para Aprendizado de Máquina
+│   ├── perfil_transporte.ipynb # Regressão logística: perfil de quem usa ônibus e metrô
+│   └── relatorio_perfil_transporte.pdf
+└── arquitetura/                # Contribuição de Arquitetura e Organização de Computadores
+    ├── sketch/sketch.ino       # ESP32: fila, previsão 1-NN, LCD, LEDs e MQTT
+    ├── diagram.json            # Circuito do Wokwi
+    └── relatorio_arquitetura.pdf
 ```
 
 ## Como rodar
@@ -260,7 +264,7 @@ _A preencher depois do teste com pelo menos 3 pessoas de fora do projeto e 10 at
 | Data Structures and Algorithms | Cadastro dos serviços em lista encadeada própria, com busca sequencial e Merge Sort. Detalhes em [`dsa/`](dsa/) |
 | Modelagem Matemática e Computacional | Reconstrução da frota por sistema linear e redistribuição por transformação linear. Detalhes em [`mmc/`](mmc/) |
 | Modelagem Linear para Aprendizado de Máquina | Perfil de quem usa ônibus e metrô em São Paulo (OD 2017) com regressão logística. Detalhes em [`ml/`](ml/) |
-| Computer Organization and Architecture | Ponto simulado no Wokwi com ESP32: contagem da fila, previsão de espera e envio IoT |
+| Computer Organization and Architecture | Fila de atendimento no Wokwi com ESP32: contagem por botões, previsão de espera com 1-NN e envio por MQTT. Detalhes em [`arquitetura/`](arquitetura/) |
 | Computer Science               | Regra lógica que decide quando o ventilador do abrigo liga                            |
 
 A busca por pontuação deste repositório é a parte avaliada em Pensamento Computacional e funciona sozinha, sem depender das outras.
