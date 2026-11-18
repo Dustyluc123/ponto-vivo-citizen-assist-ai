@@ -294,4 +294,8 @@ Os casos 1 a 6 estão em [`01_lista_vazia_e_entradas_invalidas.txt`](evidencias/
 
 ## Vídeo
 
-_Link da demonstração a adicionar._
+A demonstração das operações e dos algoritmos está nas evidências de execução, com as entradas digitadas e as saídas reais do programa:
+
+- [`evidencias/01_lista_vazia_e_entradas_invalidas.txt`](evidencias/01_lista_vazia_e_entradas_invalidas.txt): lista vazia e entradas inválidas;
+- [`evidencias/02_operacoes_com_a_base.txt`](evidencias/02_operacoes_com_a_base.txt): cadastro, busca, pesquisa, atualização, remoção, as três ordenações e a estrutura dos nós antes e depois;
+- [`evidencias/03_testes_automaticos.txt`](evidencias/03_testes_automaticos.txt): os 41 testes automáticos passando.

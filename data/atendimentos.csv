@@ -1,1 +1,11 @@
 data,origem,pergunta,id_orientacao,encontrou,ajudou,tentativas,tempo_segundos,facilidade
+2026-11-17 11:03:05,pergunta,como funciona a meia passagem do onibus para estudante,3,True,True,1,54.6,
+2026-11-17 11:05:03,pergunta,estudante paga meia?,3,True,True,3,117.7,
+2026-11-17 11:07:27,pergunta,tenho 62 anos pago onibus?,2,True,True,1,60.4,
+2026-11-18 14:09:47,pergunta,Tenho 65 anos eu pago onibus?,2,True,True,1,15.2,
+2026-11-18 14:10:15,pergunta,estudante paga quanto?,3,True,True,2,28.1,
+2026-11-18 14:11:27,pergunta,sou deficiente fisico eu pago meia ou nada?,4,True,True,1,72.0,
+2026-11-18 14:11:37,pergunta,quando que eu pago de domingo?,6,True,True,1,10.2,
+2026-11-18 14:12:09,pergunta,como funciona a baldeacao?,7,True,True,1,32.1,
+2026-11-18 14:13:03,pergunta,os pontos de onibus de tem ventilador?,13,True,True,1,54.2,
+2026-11-18 14:13:16,pergunta,é melhor eu sair de onibus ou carro?,15,True,True,1,13.0,

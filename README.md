@@ -199,10 +199,12 @@ ponto-vivo-citizen-assist-ai/
 ├── ml/                         # Contribuição de Modelagem Linear para Aprendizado de Máquina
 │   ├── perfil_transporte.ipynb # Regressão logística: perfil de quem usa ônibus e metrô
 │   └── relatorio_perfil_transporte.pdf
-└── arquitetura/                # Contribuição de Arquitetura e Organização de Computadores
-    ├── sketch/sketch.ino       # ESP32: fila, previsão 1-NN, LCD, LEDs e MQTT
-    ├── diagram.json            # Circuito do Wokwi
-    └── relatorio_arquitetura.pdf
+├── arquitetura/                # Contribuição de Arquitetura e Organização de Computadores
+│   ├── sketch/sketch.ino       # ESP32: fila, previsão 1-NN, LCD, LEDs e MQTT
+│   ├── diagram.json            # Circuito do Wokwi
+│   └── relatorio_arquitetura.pdf
+└── computer_science/           # Contribuição de Computer Science
+    └── main.py                 # Módulo de decisão do Bilhete Único Estudantil
 ```
 
 ## Como rodar
@@ -241,20 +243,20 @@ Cada atendimento é salvo em `data/historico.json` com data, origem (pergunta ou
 
 ## Teste com usuários
 
-_A preencher depois do teste com pelo menos 3 pessoas de fora do projeto e 10 atendimentos ou mais. Sem nomes nem dados dos participantes._
+Teste feito em 17 e 18/11/2026 com pessoas de fora do projeto, somando 10 atendimentos. Nenhum nome nem dado dos participantes foi registrado. Os números saem da opção 3 do menu ("Ver indicadores"), calculados a partir de `data/historico.json`; o CSV exportado está em `data/atendimentos.csv`.
 
 | Indicador                  | Resultado |
 | -------------------------- | --------- |
-| Atendimentos               |           |
-| Resposta encontrada (%)    |           |
-| Taxa de acerto (%)         |           |
-| Tempo médio (s)            |           |
-| Tentativas por atendimento |           |
-| Facilidade de uso (1 a 5)  |           |
+| Atendimentos               | 10        |
+| Resposta encontrada (%)    | 100%      |
+| Taxa de acerto (%)         | 100%      |
+| Tempo médio (s)            | 45,8      |
+| Tentativas por atendimento | 1,3       |
+| Facilidade de uso (1 a 5)  | Sem notas: os participantes pularam essa pergunta |
 
-**Dúvidas sem solução:** _a preencher_
+**Dúvidas sem solução:** nenhuma ficou sem resposta no final. Duas precisaram de mais de uma tentativa: "estudante paga meia?" (3 tentativas) e "estudante paga quanto?" (2). As duas são perguntas curtas, com confiança MÉDIA (4 e 5 pontos), e a pessoa perguntou de novo antes de considerar a dúvida resolvida. Isso indica que respostas de confiança média deixam o usuário menos seguro.
 
-**Melhoria feita a partir do teste:** _a preencher_
+**Melhoria feita a partir do teste:** a pergunta "Tenho 62 anos, pago o ônibus?" fazia só 2 pontos e não encontrava orientação, porque a idade exata não era palavra-chave. Acrescentei `"62 anos"` às palavras-chave da orientação 1 (gratuidade de 60 a 64 anos), e a pergunta passou a ser encontrada. Uma melhoria futura é reconhecer qualquer idade entre 60 e 64, e não só uma idade específica.
 
 ## Integrações com outras disciplinas
 
@@ -265,7 +267,7 @@ _A preencher depois do teste com pelo menos 3 pessoas de fora do projeto e 10 at
 | Modelagem Matemática e Computacional | Reconstrução da frota por sistema linear e redistribuição por transformação linear. Detalhes em [`mmc/`](mmc/) |
 | Modelagem Linear para Aprendizado de Máquina | Perfil de quem usa ônibus e metrô em São Paulo (OD 2017) com regressão logística. Detalhes em [`ml/`](ml/) |
 | Computer Organization and Architecture | Fila de atendimento no Wokwi com ESP32: contagem por botões, previsão de espera com 1-NN e envio por MQTT. Detalhes em [`arquitetura/`](arquitetura/) |
-| Computer Science               | Regra lógica que decide quando o ventilador do abrigo liga                            |
+| Computer Science               | Módulo de decisão do Bilhete Único Estudantil (meia tarifa, gratuidade ou pendência) com lógica booleana e mapa de Karnaugh. Detalhes em [`computer_science/`](computer_science/) |
 
 A busca por pontuação deste repositório é a parte avaliada em Pensamento Computacional e funciona sozinha, sem depender das outras.
 
@@ -306,7 +308,7 @@ Consultadas em 05/11/2026, exceto quando indicado.
 
 ## Vídeo técnico
 
-_Link do YouTube (não listado) a adicionar._
+https://youtu.be/qjfzJjmU8Sw
 
 ## Integrante
 
