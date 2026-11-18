@@ -35,7 +35,7 @@ POTENCIA_VENTILADOR_W = 20        # estimado: ventilador 12 V DC (faixa comum de
 QTD_VENTILADORES = 2              # estimado: um em cada lado do abrigo
 POTENCIA_ELETRONICA_W = 1.0       # estimado: ESP32 + sensor + tela + LEDs, com folga (ligados 24 h)
 
-# Regra do ventilador (a mesma do módulo de Computer Science)
+# Regra do ventilador: liga com calor forte (ver "Sensibilidade ao limite de temperatura" no README)
 TEMPERATURA_LIGA_C = 30           # estimado: liga com 30 °C ou mais
 HORA_INICIO, HORA_FIM = 5, 23     # estimado: horário com ônibus e passageiros no ponto
 

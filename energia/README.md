@@ -85,7 +85,7 @@ Valores que não vêm de uma fonte oficial. Todos ficam no topo de [`calculos.py
 | Potência de cada ventilador 12 V DC | 20 W | Ventiladores 12 V comerciais ficam entre 10 e 25 W |
 | Quantidade de ventiladores | 2 | Um de cada lado do abrigo |
 | Eletrônica (ESP32, sensor, tela, LEDs) | 1 W, 24 h | O ESP32 consome em média cerca de 80 mA; o valor tem folga para tela e conversores |
-| Temperatura que liga o ventilador | 30 °C | Mesma regra do módulo de Computer Science |
+| Temperatura que liga o ventilador | 30 °C | Calor forte, quando a sombra sozinha não basta. O efeito de baixar para 28 °C está em "Sensibilidade ao limite de temperatura" |
 | Horário de uso | 5h às 23h | Horário em que há ônibus e passageiros |
 | Cenário sem controle | timer das 10h às 18h, todos os dias | Forma simples de ligar um ventilador sem sensor |
 | PIS/COFINS | 5 % | Varia todo mês na conta; usado só na tarifa com impostos |
@@ -151,6 +151,17 @@ O ponto que mais pesa contra a rede num ponto sem energia é o **consumo mínimo
 
 O CO2 do abrigo é pequeno nos três casos, porque a eletricidade brasileira vem em grande parte de fontes renováveis. O ganho ambiental grande do Ponto Vivo está em outro lugar: **deixar o ônibus mais atraente**. Uma pessoa que troca o carro pelo ônibus em 440 km por mês evita cerca de **17,6 kg de CO2 por mês**, mais do que o abrigo emitiria em 20 anos ligado na rede.
 
+## Sensibilidade ao limite de temperatura
+
+Depois do teste com usuários, uma pessoa sugeriu ligar o ventilador a partir de 28 °C. Calculei com os mesmos dados de 2025, sem mudar o resultado principal:
+
+| Limite | Horas ligado por ano | Energia dos ventiladores | Economia do controle | Sistema solar | Solar em 10 anos |
+| ------ | -------------------: | -----------------------: | -------------------: | ------------- | ---------------: |
+| 30 °C (usado) | 332 h | 13,3 kWh | 88,6 % | 150 W + 50 Ah | R$ 3.150 |
+| 28 °C | 692 h | 27,7 kWh | 76,3 % | 200 W + 100 Ah | R$ 5.500 |
+
+Com 28 °C, o ventilador fica ligado o dobro do tempo, e o solar quase dobra de preço, mas continua mais barato que a ligação nova (R$ 6.271). O limite é a constante `TEMPERATURA_LIGA_C` em `calculos.py`.
+
 ## Recomendações
 
 1. **Ponto sem energia:** usar **solar com bateria**. Custa cerca de metade da ligação nova em 10 anos, não depende de obra e continua funcionando em queda de energia.
@@ -166,6 +177,7 @@ O CO2 do abrigo é pequeno nos três casos, porque a eletricidade brasileira vem
 - A irradiação é uma média histórica. Vários dias nublados seguidos no verão podem esgotar a bateria; nesse caso o ventilador para e a eletrônica continua.
 - A tarifa considera a classe B3 convencional da Enel SP, sem bandeiras tarifárias e sem reajustes futuros.
 - Os valores de emissão do Metrô de SP são médias publicadas e variam com o veículo e a lotação.
+- Dois ventiladores de 20 W atendem um abrigo comum. Em pontos muito cheios, como apontado no teste com usuários, seriam necessários mais ventiladores, e o painel e a bateria teriam de crescer na mesma proporção.
 - O sistema não foi construído fisicamente; a análise é de projeto.
 
 ## Integração ao assistente

@@ -181,6 +181,14 @@ class Assistente:
         tela.caixa([("Energia do Ponto Vivo", ("negrito",)),
                     ("Como alimentar o ventilador e a eletrônica do abrigo", ("apagado",))])
 
+        # Resumo sem termos técnicos: ajuste feito depois do teste com usuários ("ficou muito técnico")
+        tela.secao("Em poucas palavras")
+        print(tela.quebrar("O ventilador do ponto só liga quando está calor e tem gente esperando. Assim o abrigo "
+                           f"gasta pouca energia: cerca de {tela.numero(consumo['total_inteligente'] / 12)} kWh por mês, "
+                           "parecido com uma lâmpada de LED acesa algumas horas por dia. Num ponto sem luz, uma placa "
+                           f"solar com bateria custa cerca de R$ {tela.numero(custos['solar_com_bateria'], 0)} em 10 anos, "
+                           f"contra R$ {tela.numero(custos['rede_ponto_sem_energia'], 0)} para puxar energia da rua.", 4))
+
         tela.secao("Quando o ventilador precisa ligar")
         print(tela.quebrar(f"Em 2025, São Paulo teve {clima['horas_quentes_ano']} horas com "
                            f"{clima['temperatura_liga_c']} °C ou mais (das 5h às 23h), em "
